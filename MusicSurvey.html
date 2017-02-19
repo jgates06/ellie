@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+
+h2 {
+text-align: center;
+font-size: 200%;
+color:white;
+}
+
+h3 {
+text-align: left;
+font-size: 140%;
+}
+div {
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 15px;
+}
+
+body {
+    background-color: 	black;
+	font-family: "Times New Roman", Times, serif;
+	color:black;
+	}
+
+h4  {
+    text-align: center;
+font-size: 110%;
+color: white;
+}
+
+a:link {
+    color: red;
+}
+
+a:hover {
+    color: yellow;
+	background:red;
+	text-decoration: none;
+}
+	
+
+	
+</style>
+<body>
+
+<h2>Jeff's Music Survey</h2>
+
+<div>
+  <form action="http://www.markmurtha.com/csis128/readform.asp">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."><p>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><p>
+	
+	<lable for="email">E-mail:</lable>
+	<input type="text" id="email" name ="email" placeholder="Your email address.." required="required"><p>
+
+    <label for="music location"><h3>Select locations where you listen to music</h3></label><p>
+    <select size="3" id="location" name="location">
+      <option value="Home">Home</option>
+      <option value="Car">Car</option>
+      <option value="Gym">Gym</option>
+	  <option value="Work">Work</option>
+	  <option value="night club">Night Club</option>
+	  </select><p>
+	  
+	 <fieldset>
+	 <legend><h3>Select your favorite types of music</h3></legend>
+	 <input type="checkbox" name="Country" id="country" value="yes">Country<br>
+	 <input type="checkbox" name="Pop" id="Pop" value="yes">Pop<br>
+	 <input type="checkbox" name="Rock" id="Rock" value="yes">Rock<br>
+	 <input type="checkbox" name="Jazz" id="Jazz" value="yes">Jazz<br>
+	 <input type="checkbox" name="Hip Hop" id="Hip Hop" value="yes">Hip Hop<br>
+	 <input type="checkbox" name="Blues" id="Blues" value="yes">Blues<br><p>
+	 </fieldset>
+	 
+	 
+	 <fieldset>
+	<legend><h3>Select how often you purchase music</h3></legend>
+		
+			<input type="radio" name="purchase" id="daily" value="daily">
+			<label for="daily">Daily</label>
+			
+			<input type="radio" name="purchase" id="weekly" value="weekly">
+			<label for="weekly">Daily</label>
+			
+			<input type="radio" name="purchase" id="monthly" value="monthly">
+			<label for="monthly">Monthly</label>
+			
+			<input type="radio" name="purchase" id="yearly" value="yearly">
+			<label for="yearly">Yearly</label>
+			</fieldset>	
+			
+			
+			
+	 
+	 <label for="music role"><h3>What role does music play in your life?</h3></lable><p>
+	 <textarea name="comments" id="comments" cols="60" rows="3">Some text...</textarea>
+	<p>
+  
+    <input type="submit" value="Submit">
+	<input type="reset" value="Reset">
+  </form>
+  
+</div>
+<p>
+	
+<h4>Email: <a href="mailto:S1416131@Student.MCCKC.EDU">Jeff Gates</a></h4>
+	
+</p>
+</body>
+</html>
