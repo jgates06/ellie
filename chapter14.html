@@ -1,0 +1,67 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<style>
+div {
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 15px;
+}
+</style>
+
+
+<script type="text/javascript">
+function validateForm() 
+{
+	 if( document.myForm.name.value == "" )
+   {
+     alert( "Please provide your name!" );
+     return false;
+   }
+	
+	  
+   else if( document.myForm.email.value == "" )
+   {
+     alert( "Please provide your Email!" );
+     return false;
+   }
+
+ }
+
+ 
+ function validateEmail()
+{
+
+   var em = document.forms["myForm"]["email"].value;
+   var atpos = em.indexOf("@");
+   var dotpos = em.lastIndexOf(".");
+   if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) 
+   {
+       alert("Please enter correct email address")
+       return false;
+   }
+ 
+}
+
+</script>
+<title>Form Validation</title>
+</head>
+<body>
+<div>
+<form name="myForm" action="http://www.markmurtha.com/csis128/readform.asp"
+onsubmit="return validateForm() & validateEmail()" method="post">
+  Name: <input type="text" id="name" name="name">
+  <br>
+  E-Mail Address: <input type="text" name="email"><p>
+  
+  <input type="submit" value="Sign Up Now">
+</form>
+</DIV>
+
+</body>
+</html>
