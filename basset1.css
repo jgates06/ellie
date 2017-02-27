@@ -21,9 +21,7 @@ ul {
 
 ol.bone {
     list-style-image: url('https://jgates06.github.io/ellie/small_bone.png');
-    height: 70%;
-    width: 70%;
-}
+    }
 
 li a {
     display: block;
