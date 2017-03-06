@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css"; rel="stylesheet"; href="basset1.css">
+		<script type="text/javascript">
+function validateForm() 
+{
+	 if( document.myForm.name.value == "" )
+   {
+     alert( "Please provide your name!" );
+     return false;
+   }
+	
+	  
+   else if( document.myForm.email.value == "" )
+   {
+     alert( "Please provide your Email!" );
+     return false;
+   }
+
+ }
+
+ 
+ function validateEmail()
+{
+
+   var em = document.forms["myForm"]["email"].value;
+   var atpos = em.indexOf("@");
+   var dotpos = em.lastIndexOf(".");
+   if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) 
+   {
+       alert("Please enter correct email address")
+       return false;
+   }
+ 
+}
+
+</script>
+<style>
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover{
+	background-color:#553100;
+	color:#FFDBAA;
+	
+		}
+</style>
+
+		<title>Local Dog Sitting familes</title>
+	</head>
+	<body>
+
+<ul>
+   <li><a class="active" href="Basset_home.html">Home</a></li>
+  <li><a href="History.html">History</a></li>
+  <li><a href="Basset_album.html">Albums</a></li>
+  <li><a href="Health.html">Health</a></li>
+  <li><a href="Basset_treats.html">DIY Treats</a></li>
+  <li><a href="parks.html">Dog Parks</a></li>
+  <li><a href="sitters.html">Sitters</a></li>
+  </ul>
+
+<div style="margin-left:12%;padding:1px 16px;height:1000px;">
+  <h2>Basset Hound Round Up</h2>
+  <h3>Parents Night Out for Dogs!</h3>
+<p>Have you ever had a last minute trip out of town come up and you suddenly found yourself in need of an doggy sitter?  Well look no further, we have put together a network of like minded folks who help each other out in these situations.
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>City</th>
+	<th>Dogs</th>
+	<th>Able to host</th>
+    <th>Size</th>
+    <th>Time</th>
+	<th>Special needs</th>
+  </tr>
+  <tr>
+    <td>Deans</td>
+    <td><a href="mailto:pg123@gmail.com">pg123@gmail.com</a></td>
+    <td>Lee's Summit</td>
+	<td>2</td>
+    <td>1</td>
+    <td>Large</td>
+	<td>Flexible</td>
+	<td>No</td>
+  </tr>
+  <tr>
+    <td>Pearson</td>
+    <td><a href="mailto:epeason@gmail.com">epeason@gmail.com</a></td>
+    <td>Lee's Summit</td>
+	<td>2</td>
+    <td>1-4</td>
+    <td>Large</td>
+	<td>Flexible</td>
+	<td>Depends</td>
+  </tr>
+  <tr>
+    <td>Smith</td>
+    <td><a href="mailto:Jsmth12@yahoo.com">Jsmth12@yahoo.com</a></td>
+    <td>Raymore</td>
+	<td>3</td>
+    <td>1</td>
+    <td>small</td>
+	<td>Flexible</td>
+	<td>Depends</td>
+  </tr>
+  <tr>
+    <td>Brown</td>
+    <td><a href="mailto:Cbrown@msn.com">Cbrown@msn.com</a></td>
+    <td>Greenwood</td>
+	<td>1</td>
+    <td>N/A</td>
+    <td>small</td>
+	<td>Flexible</td>
+	<td>Flexible</td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+<p>If you are considering signing up to this network, fill out the following survery and recieve more information:<p>
+
+<form name="myForm" action="http://www.markmurtha.com/csis128/readform.asp"
+onsubmit="return validateForm() & validateEmail()" method="post">
+  Name: <input type="text" id="name" name="name"><p>
+  Email: <input type="text" id="email" name="email"><p>
+  How many pups you currently have:<input type="text" name="current"><p>
+  How many are you willing to host: <input type="text" name="nohost"><p>
+  What size of dog work best for you? <select name="Size">
+   <option value="-1" selected>dog size</option>
+   <option value="1">Small</option>
+   <option value="2">Medium</option>
+   <option value="3">Large</option>
+ </select><p>
+  Max host time: <input type="text" name="time"><p>
+  Willing to host special needs dogs? <input type="text" name="specialneeds"><p>
+    
+  <input type="submit" value="Sign Up Now">	<input type="reset" value="Reset">
+</form>
+</DIV>
+
+</body>
+</html>
