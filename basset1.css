@@ -53,11 +53,19 @@ h3 {
 	font-size: 150%;
 	font-weight:Bold;
 	}
+h5 {
+		
+	text-align: center;
+	font-size: 70%;
+	font-weight:Bold;
+	}
 
 
-table, td {
+ table, td {
 	border: 3px #D4A76A solid;
 }
+
+ 
 
 td a:link {
     color: #D4A76A;
@@ -67,3 +75,12 @@ td a:hover {
     color: white;
 }
 
+.video-right {
+    float: right;
+    padding-left: 15px;
+}
+
+.video-left {
+    float: left;
+    padding-left: 15px;
+}
