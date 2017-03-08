@@ -40,6 +40,11 @@ li a:hover:not(.active) {
     background-color: #805215;
     color: white;
 }
+
+h1 {
+	text-align: center;
+	font-weight:Bold;
+	}
 h2 {
 		
 	text-align: center;
@@ -83,4 +88,30 @@ td a:hover {
 .video-left {
     float: left;
     padding-left: 15px;
+}
+.floating-box {
+    display: inline-block;
+    width: 30%;
+    margin: 40px;
+    !--border: 3px solid #73AD21;--!  
+}
+
+.after-box {
+    border: 3px solid red; 
+}
+		
+img.rotate-left {
+    width="auto" 
+	height="200"
+	border-radius: 8px;
+    -ms-transform: rotate(-4deg); /* IE 9 */
+    -webkit-transform: rotate(-4deg); /* Chrome, Safari, Opera */
+    transform: rotate(-4deg);
+}
+img.rotate-right {
+   	width="auto"
+	
+	-ms-transform: rotate(4deg); /* IE 9 */
+    -webkit-transform: rotate(4deg); /* Chrome, Safari, Opera */
+    transform: rotate(4deg);
 }
