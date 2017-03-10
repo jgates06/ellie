@@ -58,9 +58,14 @@ h3 {
 	font-size: 150%;
 	font-weight:Bold;
 	}
-h5 {
+h4 {
 		
-	text-align: center;
+	text-align: left;
+	font-size: 130%;
+	font-weight:Bold;
+	}
+h5 {
+			text-align: center;
 	font-size: 70%;
 	font-weight:Bold;
 	}
@@ -93,7 +98,7 @@ td a:hover {
     display: inline-block;
     width: 30%;
     margin: 40px;
-    !--border: 3px solid #73AD21;--!  
+    <!--border: 3px solid #73AD21;--!>
 }
 
 .after-box {
@@ -101,17 +106,36 @@ td a:hover {
 }
 		
 img.rotate-left {
-    width="auto" 
-	height="200"
+    width:auto;
+	height:200px;
 	border-radius: 8px;
     -ms-transform: rotate(-4deg); /* IE 9 */
     -webkit-transform: rotate(-4deg); /* Chrome, Safari, Opera */
     transform: rotate(-4deg);
 }
 img.rotate-right {
-   	width="auto"
-	
+   	width:auto;
+	height:285px; 
+	left: 1px;
+	border-radius: 18px;
 	-ms-transform: rotate(4deg); /* IE 9 */
     -webkit-transform: rotate(4deg); /* Chrome, Safari, Opera */
     transform: rotate(4deg);
 }
+
+
+#footer {
+	position: relative;     
+       text-align: center;
+		font-size:80%;
+		bottom: 0px; 
+       width: 100%;
+	   background-color: #553100;
+		color: white;
+		padding: 2px 2px;
+			
+}
+#footer a:link { color: white; }
+#footer a:visited { color: #FFDBAA; }
+#footer a:hover { color: #31F8F8; }
+#footer a:active { color: #F831E9; }
