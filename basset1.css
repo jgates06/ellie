@@ -96,8 +96,8 @@ td a:hover {
 }
 .floating-box {
     display: inline-block;
-    width: 30%;
-    margin: 40px;
+    width: 40%;
+    margin: 30px;
     <!--border: 3px solid #73AD21;--!>
 }
 
@@ -113,6 +113,15 @@ img.rotate-left {
     -webkit-transform: rotate(-4deg); /* Chrome, Safari, Opera */
     transform: rotate(-4deg);
 }
+img.rotate-right2 {
+   	
+	left: 1px;
+	border-radius: 18px;
+	-ms-transform: rotate(4deg); /* IE 9 */
+    -webkit-transform: rotate(4deg); /* Chrome, Safari, Opera */
+    transform: rotate(4deg);
+}
+
 img.rotate-right {
    	width:auto;
 	height:285px; 
@@ -123,7 +132,6 @@ img.rotate-right {
     transform: rotate(4deg);
 }
 
-
 #footer {
 	position: relative;     
        text-align: center;
@@ -133,6 +141,7 @@ img.rotate-right {
 	   background-color: #553100;
 		color: white;
 		padding: 2px 2px;
+		font-style: oblique;
 			
 }
 #footer a:link { color: white; }
